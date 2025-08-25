@@ -2,15 +2,25 @@ import {Markdown, Meta, Unstyled} from '@storybook/blocks';
 import {NavCard} from '../../components/NavCard';
 import {DeprecatedTokens} from './examples/DeprecatedTokens';
 
-<Meta title="Guides/Migartion [v2 > v3]/What's New in v3" />
+<Meta title="Guides/Upgrade Guides/v3.0" />
 <Unstyled>
 
-# What's New in v3
+
+## What's New in v3
 
 We've overhauled our color system to align with Workday's new brand identity, while also making
 improvements to our underlying colors to be more functional, accessible, and extensible. These
 updates remap our existing brand and system tokens to our new color palettes. We also introduce new
-token variants that provide better cover for the use cases of Workday's diverse products.
+token variants that provide better cover for the use cases of Workday's diverse products. 
+
+## Canvas Token v2.0 -> v3.0
+
+> **Important:** v3.0 tokens use `oklch` instead of `RGBA` which will result in colors being perceived differently. The new color palette is always a **breaking change**. To reduce the impact, we strongly suggest using `system` or `brand` tokens instead of `base` tokens.
+
+If you're migrating from v2.0 to v3.0, the biggest changes will be:
+- Colors now use `oklch` instead of `RGBA`
+- New base palette: `blue`, `green`, `red`, `amber`, `purple`, `orange`, `neutral`, `azure`, `magenta`, `teal`, `indigo`, `coral` and `slate`.
+- Old "fruit" based colors are deprecated and map to the new colors. 
 
 ### RGBA to OKLCH
 
