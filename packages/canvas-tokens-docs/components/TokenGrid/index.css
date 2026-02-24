@@ -54,9 +54,10 @@
 .token-grid__swatch {
   display: grid;
   grid-template-columns: minmax(2rem, 8rem);
-  height: 2rem;
+  height: 3rem;
   padding: 0.5rem;
   border: 0.0625rem solid var(--cnvs-sys-color-border-divider);
+  border-radius: var(--cnvs-sys-shape-md)
 }
 
 .token-grid__sample {
